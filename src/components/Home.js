@@ -20,10 +20,10 @@ export default Home
 
 const BigHeader = styled.div`
     .menu-fixo {
+        position: sticky;
         font-weight: 400;
         background-color: #9b111e ;
         color: #f0f0f0;
-        width: 98.5%;
         height: 60px;
         display: flex;
         font-size: 18px;
@@ -32,7 +32,6 @@ const BigHeader = styled.div`
         align-content: center;
         list-style: none;
         margin-top: 2px;
-        margin-right: 50px;
         padding: 2px;
 
         &:before {
@@ -47,36 +46,42 @@ const BigHeader = styled.div`
     }
 
     .fixo1 {
+        cursor: pointer;
         position: relative;
         margin-top: 15px;
         margin-left: 50px;
     }
 
     .fixo2 {
+        cursor: pointer;
         position: relative;
         margin-top: 15px;
         margin-left: 50px;
     }
 
     .fixo3 {
+        cursor: pointer;
         position: relative;
         margin-top: 15px;
         margin-left: 40px;
     }
 
     .fixo4 {
+        cursor: pointer;
         position: relative;
         margin-top: 15px;
         margin-left: 40px;
     }
 
     .fixo5 {
+        cursor: pointer;
         position: relative;
         margin-top: 15px;
         margin-left: 40px;
     }
 
     .fixo6{
+        cursor: pointer;
         position: relative;
         margin-top: 15px;
         margin-left: 40px;

@@ -25,6 +25,7 @@ function Header() {
 export default Header
 
 const Nav = styled.nav`
+    position: sticky;
     height: 80px;
     background: white;
     display: flex;
@@ -64,7 +65,16 @@ const Nav = styled.nav`
         font-size: 17px;
         color: #222;
         font-weight: 400;
-        cursor: pointer; 
+        cursor: pointer;
+        
+            &:hover {                
+                opacty: 0;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);
+                -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+                filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+            }
         }
 
         input {

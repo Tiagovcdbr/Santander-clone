@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import styled from "styled-components"
 import "slick-carousel/slick/slick.css";
@@ -50,7 +52,10 @@ export default Cards
 const Group = styled(Slider)`
     width: 100%;
     height: 100px;
-    margin-top: -10px;    
+    margin-top: -10px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+
 `
 
 const CardSlick = styled.div`
@@ -74,12 +79,13 @@ const Slide = styled.div`
     }
     
     display: flex;
+    cursor: pointer;
     position: relative;
     justify-content: center;
     margin-left: 390px;
     margin-top: 40px;
     border: 1px solid #767676;
-    border-bottom: 1px solid #767676;
+    border-bottom: 2px solid #767676;
     border-radius: 6px;
     width: 110px;
     height: 110px;  
@@ -103,6 +109,7 @@ const Slide2 = styled.div`
     }
     
     display: flex;
+    cursor: pointer;
     position: relative;
     justify-content: center;
     margin-left: 557px;
@@ -132,6 +139,7 @@ const Slide3 = styled.div`
     }
     
     display: flex;
+    cursor: pointer;
     position: relative;
     justify-content: center;
     margin-left: 724px;
@@ -161,6 +169,7 @@ const Slide4 = styled.div`
     }
     
     display: flex;
+    cursor: pointer;
     position: relative;
     justify-content: center;
     margin-left: 890px;
@@ -190,11 +199,13 @@ const Slide5 = styled.div`
     }
     
     display: flex;
+    cursor: pointer;
     position: relative;
     justify-content: center;
     margin-left: 1055px;
     margin-top: -137px;
     border: 1px solid #767676;
+    border-bottom: 2px solid #767676;
     border-radius: 6px;
     width: 110px;
     height: 110px;  
@@ -218,6 +229,7 @@ const Slide6 = styled.div`
     }
     
     display: flex;
+    cursor: pointer;
     position: relative;
     justify-content: center;
     margin-left: 1220px;
@@ -246,6 +258,7 @@ const Slide7 = styled.div`
     }
     
     display: flex;
+    cursor: pointer;
     position: relative;
     justify-content: center;
     margin-left: 1382px;
@@ -266,3 +279,4 @@ const Slide7 = styled.div`
         font-weight: 400;
     }
 `
+
