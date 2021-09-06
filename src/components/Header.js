@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import LockIcon from '@material-ui/icons/Lock';
 
 function Header() {
     return (
@@ -10,8 +11,13 @@ function Header() {
             <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="O que você procura?" />
                 <Search src="https://www.santander.com.br/sites/WPC_CMS/imagem/21-03-26_095020_M_ic_search.svg" id="btnBusca" alt="Buscar" />
-                <div class="search-field-container"></div>
+                <div class="search-field-container"></div>                
             </div>
+            <input type="text" class="login" placeholder="Insira seu CPF" />
+            <span><LockIcon style={{ fontSize: 16 }} /></span>
+            <span2>Acessar</span2>
+            <span3>Pessoa física</span3>
+            <span4>Pessoa jurídica</span4>
         </Nav>
     )
 }
@@ -23,7 +29,7 @@ const Nav = styled.nav`
     background: white;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 10px; 
 
     h1 {
         display: flex;
@@ -31,7 +37,24 @@ const Nav = styled.nav`
         margin-left: 50px;
         font-size: 18px;
         color: #c00;
-        font-weight: 600;         
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+
+            &:hover {
+                content: "";                             
+                display: flex;                            
+                height: 2px;
+                text-decoration: underline;
+                color: #c00;
+                opacty: 0;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);
+                
+                -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+                filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+            }    
     }
 
     h2 {
@@ -41,12 +64,18 @@ const Nav = styled.nav`
         font-size: 17px;
         color: #222;
         font-weight: 400;
+        cursor: pointer; 
         }
 
         input {
             position: absolute;
             display: flex;
             margin-left: 46px;
+            letter-spacing: -.05em;
+            line-height: 1.1;
+            font-weight: 600;
+            color: #888;
+            transition: color 1s, opacity 1s;
             font-size: 15px;
             width: 850px;
             margin-top: 30px;
@@ -65,12 +94,57 @@ const Nav = styled.nav`
             height: 81px;
             display: flex;
             margin-left: 50px;
-            margin-top: 2px;
+            margin-top: -2px;
             box-shadow: inset 0 -2px 0 0 #ccc;            
+        }
+
+        .login {
+            font-size: 13px;
+            margin-left 1440px;
+            margin-bottom: 6px;
+            box-shadow: 0px 0 1px 1px #999;
+            width: 146px;
+            height: 20px;
+            padding: .4rem !important;
+            background-color: #f0f0f0;
+            color: #444;            
+        }
+
+        span {
+            display: flex;
+            position: relative;
+            margin-top: 25px;
+            margin-left: 210px;    
+        }
+
+        span2 {
+            display: flex;
+            position: relative;
+            margin-bottom: 36px;
+            margin-left: -145px;
+        }
+
+        span3 {
+            cursor: pointer;
+            display: flex;
+            position: relative;
+            margin-bottom: 36px;
+            margin-left: 13px;
+        }
+
+        span4 {
+            cursor: pointer;
+            display: flex;
+            position: relative;
+            margin-bottom: 36px;
+            margin-left: 13px;
+            text-decoration: underline;
+            color: #c00;
         }
 `
 
 const Logo = styled.img`
+    cursor: pointer;
     display: flex;
     align-items: center;
     width: 148px;
