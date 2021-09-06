@@ -50,6 +50,18 @@ const BigHeader = styled.div`
         position: relative;
         margin-top: 15px;
         margin-left: 50px;
+
+        &:hover {
+                text-decoration: underline;
+                color: white;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);               
+                opacty: 1;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);                
+            }
     }
 
     .fixo2 {
@@ -57,6 +69,18 @@ const BigHeader = styled.div`
         position: relative;
         margin-top: 15px;
         margin-left: 50px;
+
+        &:hover {
+                text-decoration: underline;
+                color: white;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);               
+                opacty: 1;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);                
+            }
     }
 
     .fixo3 {
@@ -64,6 +88,18 @@ const BigHeader = styled.div`
         position: relative;
         margin-top: 15px;
         margin-left: 40px;
+
+        &:hover {
+                text-decoration: underline;
+                color: white;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);               
+                opacty: 1;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);                
+            }
     }
 
     .fixo4 {
@@ -71,6 +107,18 @@ const BigHeader = styled.div`
         position: relative;
         margin-top: 15px;
         margin-left: 40px;
+
+        &:hover {
+                text-decoration: underline;
+                color: white;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);               
+                opacty: 1;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);                
+            }
     }
 
     .fixo5 {
@@ -78,6 +126,18 @@ const BigHeader = styled.div`
         position: relative;
         margin-top: 15px;
         margin-left: 40px;
+
+        &:hover {
+                text-decoration: underline;
+                color: white;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);               
+                opacty: 1;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);                
+            }
     }
 
     .fixo6{
@@ -85,6 +145,18 @@ const BigHeader = styled.div`
         position: relative;
         margin-top: 15px;
         margin-left: 40px;
+
+        &:hover {
+                text-decoration: underline;
+                color: white;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);               
+                opacty: 1;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);                
+            }
     }
 `
 

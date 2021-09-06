@@ -7,7 +7,7 @@ import ImgSlider from './components/ImgSlider';
 import Cards from './components/Cards';
 import loader from './components/loader';
 import Important from './components/Important';
-import Suport from './components/Suport';
+import HomeSlider from './components/HomeSlider';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Cards />
       <loader />
       <Important />
-      <Suport />
+      <HomeSlider />
     </div>
   );
 }

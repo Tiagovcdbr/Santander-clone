@@ -52,9 +52,6 @@ const Nav = styled.nav`
                 transform-origin: left center;
                 transition: all 250ms;
                 transform: scaleX(1);
-                
-                -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-                filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
             }    
     }
 
@@ -67,13 +64,16 @@ const Nav = styled.nav`
         font-weight: 400;
         cursor: pointer;
         
-            &:hover {                
+            &:hover {
+                text-decoration: underline;
+                color: black;
+                transform-origin: left center;
+                transition: all 250ms;
+                transform: scaleX(1);               
                 opacty: 0;
                 transform-origin: left center;
                 transition: all 250ms;
-                transform: scaleX(1);
-                -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-                filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+                transform: scaleX(1);                
             }
         }
 
