@@ -9,7 +9,7 @@ function HomeSlider() {
     let settings = {
         dots: true,
         infinite: true,
-        speed: 700,
+        speed: 900,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true
@@ -29,7 +29,7 @@ function HomeSlider() {
 export default HomeSlider
 
 const Carousel = styled(Slider)`
-    cursor: pointer;
+    
     
     .slick-dots li button:before
     {   
@@ -59,6 +59,7 @@ const Carousel = styled(Slider)`
 
 const Wrap = styled.div`
     img {
+        cursor: pointer;
         position: relative;
         margin-left: 391px;
         margin-top: 1500px;

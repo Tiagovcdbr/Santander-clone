@@ -8,6 +8,9 @@ import Cards from './components/Cards';
 import loader from './components/loader';
 import Important from './components/Important';
 import HomeSlider from './components/HomeSlider';
+import Products from './components/Products';
+import News from './components/News';
+import Channels from './components/Channels';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
       <loader />
       <Important />
       <HomeSlider />
+      <Products />
+      <News />
+      <Channels />
     </div>
   );
 }

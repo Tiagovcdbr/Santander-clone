@@ -162,6 +162,7 @@ const Card5 = styled.div`
 `
 
 const Card6 = styled.div`
+    cursor: pointer;
     position: absolute;
     margin-top: 588px;
     margin-left: 958px;
@@ -169,9 +170,10 @@ const Card6 = styled.div`
 
 const SlideImg = styled.div`
     img {
-        cursor: pointer;
+        position: absolute;
         margin-top: 1220px;
         margin-left: 390px;
+        cursor: pointer;
     }
 `
 
