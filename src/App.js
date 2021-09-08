@@ -12,6 +12,7 @@ import Products from './components/Products';
 import News from './components/News';
 import Channels from './components/Channels';
 import Tips from './components/Tips';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <News />
       <Channels />
       <Tips />
+      <Footer />
     </div>
   );
 }

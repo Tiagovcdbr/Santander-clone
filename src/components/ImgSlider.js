@@ -10,6 +10,7 @@ function ImgSlider() {
         dots: true,
         infinite: true,
         speed: 700,
+        arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true
@@ -25,7 +26,6 @@ function ImgSlider() {
             <Wrap>
                 <img src="/images/slide3.png" alt="/" />
             </Wrap>
-
         </Carousel>
     )
 }

@@ -1,7 +1,19 @@
 import React from 'react'
 import styled from "styled-components"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick"
 
 function Tips() {
+
+    let settings = {
+        dots: true,
+        infinite: true,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false
+    };
     return (
         <Nav>
             <h1>Veja também</h1>
@@ -18,9 +30,17 @@ function Tips() {
                 <img src="/images/tips4.png" alt="#"/>
             </Cards4>
                 <h2>Outras marcas do Grupo Santander Brasil</h2>
-            <Group>
-
-            </Group>
+            <Carousel {...settings} >
+                <Wrap>
+                    <img src="/images/slider1.png" alt="#" />
+                </Wrap>
+                <Wrap>
+                    <img src="/images/slider2.png" alt="#" />
+                </Wrap>
+                <Wrap>
+                    <img src="/images/slider3.png" alt="#" />
+                </Wrap>
+            </Carousel>
         </Nav>
     )
 }
@@ -54,6 +74,7 @@ const Nav = styled.div`
 
 const Cards = styled.div`
     img {
+        cursor: pointer;
         display: flex;
         posiition: absolute;
         margin-Left: 390px;
@@ -63,6 +84,7 @@ const Cards = styled.div`
 
 const Cards2 = styled.div`
     img {
+        cursor: pointer;
         display: flex;
         position: absolute;
         margin-left: 678px;
@@ -72,6 +94,7 @@ const Cards2 = styled.div`
 
 const Cards3 = styled.div`
     img {
+        cursor: pointer;
         display: flex;
         position: absolute;
         margin-left: 968px;
@@ -81,6 +104,7 @@ const Cards3 = styled.div`
 
 const Cards4 = styled.div`
     img {
+        cursor: pointer;
         display: flex;
         position: absolute;
         margin-left: 1256px;
@@ -88,6 +112,37 @@ const Cards4 = styled.div`
     }
 `
 
-const Group = styled.div`
+const Carousel = styled(Slider)`
+    .slick-prev:before,
+    .slick-next:before {
+    color: black !important;
+    }
+
+    .slick-next:before {
+        display: flex;
+        position: relative;
+        margin-left: -27px;        
+    }
     
+    .slick-next {
+    right: 320px;
+    margin-top: 85px;
+    }
+
+    .slick-prev {
+    left: 330px;
+    margin-top: 87px;
+    }
+
+    .slick-arrow.slick-prev {
+  display: none;
+}
+`
+
+const Wrap = styled.div`
+    img {
+        cursor: pointer;
+        margin-top: 200px;
+        margin-left: 385px;
+    }
 `
