@@ -68,7 +68,6 @@ const Nav = styled.nav`
                 text-decoration: underline;
                 color: black;
                 transform-origin: left center;
-                transition: all 250ms;
                 transform: scaleX(1);               
                 opacty: 0;
                 transform-origin: left center;

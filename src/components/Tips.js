@@ -130,7 +130,7 @@ const Carousel = styled(Slider)`
     }
 
     .slick-prev {
-    left: 330px;
+    left: 350px;
     margin-top: 87px;
     }
 
@@ -144,5 +144,6 @@ const Wrap = styled.div`
         cursor: pointer;
         margin-top: 200px;
         margin-left: 385px;
+        border-box: none;
     }
 `
