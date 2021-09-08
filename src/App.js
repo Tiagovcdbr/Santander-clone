@@ -11,6 +11,7 @@ import HomeSlider from './components/HomeSlider';
 import Products from './components/Products';
 import News from './components/News';
 import Channels from './components/Channels';
+import Tips from './components/Tips';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Products />
       <News />
       <Channels />
+      <Tips />
     </div>
   );
 }
